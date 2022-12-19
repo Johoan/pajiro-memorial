@@ -17,12 +17,12 @@ import {
 
 const links = [
   { href: '#home', text: 'Home' },
-  { href: '#card', text: 'Product' },
-  { href: '#about', text: 'About' },
-  { href: '#cata', text: 'Categories' },
+  { href: '#acad', text: 'Academics' },
+  { href: '#about', text: 'About Us' },
+  { href: '#infogal', text: 'Info & Gallery' },
   { href: '#test', text: 'Blogs' },
-  { href: '#test2', text: 'News' },
-  { href: '#busns', text: 'Adds', className: 'btnadd' },
+  { href: '#news', text: 'News' },
+  { href: '#admission', text: 'Admission', className: 'btnadd' },
   { href: '/login', text: 'LOGIN' },
 ];
 
@@ -52,8 +52,16 @@ export default class Menunav extends React.Component {
   render() {
     return (
       <div>
+        <div>
+          <div>
+            <img src=""/>
+          </div>
+          <div>
+
+          </div>
+        </div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Pajiro Memorial</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
