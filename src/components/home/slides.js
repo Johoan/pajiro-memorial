@@ -1,10 +1,12 @@
 import React from "react";
 import { UncontrolledCarousel, Row, Col } from "reactstrap";
+import logo from '/home/john/Desktop/pajiro-memorial/pajiro-memorial/public/logo192.png';
+
 
 const items = [
   {
     src:
-      "https://demos.creative-tim.com/argon-design-system-pro/assets/img/faces/team-5.jpg",
+      {logo},
     altText: "Slide 1",
     caption: "",
     header: "",
@@ -14,7 +16,7 @@ const items = [
     src:
       "https://demos.creative-tim.com/argon-design-system-pro/assets/img/faces/team-4.jpg",
     altText: "Slide 2",
-    caption: "",
+    caption: "School library",
     header: "",
     key: "2",
   },
@@ -30,7 +32,7 @@ const items = [
 
 const Slides = () => (
   <Row>
-    <Col md="11" className="mx-auto">
+    <Col md="11.5" className="mx-auto">
       <UncontrolledCarousel items={items} />
     </Col>
   </Row>
